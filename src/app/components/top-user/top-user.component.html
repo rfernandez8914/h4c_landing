@@ -1,0 +1,30 @@
+<section>
+    <div class="container" *ngIf="users">
+        <div class="row" style="text-align: center; margin-top: 50px;margin-bottom: 50px;">
+            <div class="col-12 mb-5">
+                <h2>Why try Hunting 4 Connections?</h2>
+                <p>The online dating solution for people who live an Outdoor Lifestyle, Find your date, friend, relationship, or activity partner at Hunting4Connections. A shared interest is a shared treasure.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 mt-2" style="text-align: center;" *ngFor="let user of users">
+                    <div class="row">
+                        <div class="col-12">
+                            <img [src]="user.photo" class="img-fluid rounded">
+                            <p><b>{{ user.user }}, {{ user.age }}</b></p> 
+                        </div>
+                        <div class="col-12" style="text-align: center">
+                            <ng-container *ngFor="let activity of user.activities; let i = index">
+                                <button *ngIf="i == 0" type="button" class="btn btn-danger mt-1 ms-1 p-1" style="font-size: 10px;" >{{ activity }}</button>
+                                <button *ngIf="i == 1" type="button" class="btn btn-success mt-1 ms-1 p-1" style="font-size: 10px;" >{{ activity }}</button>
+                                <button *ngIf="i == 2" type="button" class="btn btn-warning mt-1 ms-1 p-1" style="font-size: 10px;" >{{ activity }}</button>
+                            </ng-container>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <a [href]="url_page + user.url" type="button" class="btn btn-outline-danger" style="margin-top: 10px;">Say Hi!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

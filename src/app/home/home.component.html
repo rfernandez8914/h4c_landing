@@ -1,0 +1,314 @@
+<section class="image-section" style="margin-top: 60px;">
+    <div class="container" style="min-height: 500px;">
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-md-4 offset-md-4 d-none d-sm-block" style="padding-top: 135px;padding-left: 35px;">
+                <h2><span style="color: #ffffff; font-size: 34px;">Today’s Dating Solution<br> For Outdoor Enthusiasts!</span></h2>
+            </div>
+            <div class="col-md-4 col-sm-12" style="margin-bottom: 50px;">
+                <div class="card" style="padding: 15px;border-radius: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; color: #00528e;font-size: 20px; font-weight: bold;">FOR PEOPLE THAT ENJOY OUTDOOR ACTIVITIES</h5>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 15px;text-align: center;color: #808080;">Join Now! is Simple, Fast and Free!</h6>
+                        <form [formGroup]="registerForm" class="row">
+                            <div class="col-6">
+                                <b>I AM A:</b><br>
+                                <div class="row">
+                                    <div class="col text-center p-0">
+                                        <input type="radio" name="imgbackground" id="img1" class="d-none imgbgchk" formControlName="gender" name="gender" value="M">
+                                        <label for="img1">
+                                            <img src="./../../assets/man.png" alt="Image 1">
+                                        </label>
+                                    </div>
+                                    <div class="col text-center p-0">
+                                        <input type="radio" name="imgbackground" id="img2" class="d-none imgbgchk" formControlName="gender" name="gender" value="F">
+                                        <label for="img2">
+                                            <img src="./../../assets/woman.png" alt="Image 2">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <b>SEEKING A:</b><br>
+                                <div class="row">
+                                    <div class="col text-center p-0">
+                                        <input type="checkbox" name="imgbackground" id="img3" class="d-none imgbgchk" formControlName="seeking1" name="seeking1" value="M">
+                                        <label for="img3">
+                                            <img src="./../../assets/man.png" alt="Image 3">
+                                        </label>
+                                    </div>
+                                    <div class="col text-center p-0">
+                                        <input type="checkbox" name="imgbackground" id="img4" class="d-none imgbgchk" formControlName="seeking2" name="seeking2" value="F">
+                                        <label for="img4">
+                                            <img src="./../../assets/woman.png" alt="Image 4">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+                                <div class="col-3" style="font-size: 12px; padding: 0px;">
+                                    <b>BETWEEN AGES:</b>
+                                </div>
+                                <div class="col-3" style="padding: 0px;">
+                                <select class="form-select" formControlName="min" name="min">
+                                    <option *ngxRange="let value from 18 to 100" [value]="value">{{ value }}</option>
+                                </select>
+                                </div>
+                                <div class="col-3" style="font-size: 12px; padding: 0px; text-align: center;">
+                                    <b>AND</b>
+                                </div>
+                                <div class="col-3" style="padding: 0px;">
+                                    <select class="form-select" formControlName="max" name="max">
+                                        <option *ngxRange="let value from 18 to 100" [value]="value">{{ value }}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-danger" style="margin-bottom: 10px;" (click)="register()">Register</button>
+                            <a href="https://www.hunting4connections.com/app/accounts/facebook/login/?process=login" type="button" class="btn btn-primary" style="margin-bottom: 10px;">Sign In With Facebook</a>
+                            <a href="https://www.hunting4connections.com/app/accounts/google/login/?process=login" type="button" class="btn btn-light" style="margin-bottom: 10px;">Sign In With Google</a>
+                            <p style="text-align: center;">OR</p>
+                            <a href="https://www.hunting4connections.com/app/accounts/login/" type="button" class="btn btn-success" style="margin-bottom: 10px;">Sign Up</a>
+                            <p style="color: #919191; text-align: center; font-size: 14px;">By clicking on this button I confirm that I have read and agree to the <a href="https://www.hunting4connections.com/index.php/privacy/" style="color:#5f5f5f">Terms and Conditions, Privacy Policy and Cookie Policy</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-top-user></app-top-user>
+<section class="image-section-activities">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-8" style="margin-bottom: 50px; margin-top: 50px">
+                <div class="card" style="padding: 15px;border-radius: 20px;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center; color: #00528e;font-size: 20px; font-weight: bold;">We are a specialized dating site for outdoor enthusiasts</h5>
+                      <div class="row">
+                        <div class="col-4" style="text-align: center">
+                            <img src="../../assets/hiking.png" style="width: 70%;">
+                        </div>
+                        <div class="col-8">
+                            <h3 style="font-weight: bold;color: #117b6f;">Hiking</h3>
+                            <p style="font-size: 12px;">An amazing opportunity to know each other in nature. Develop trust by caring for each other and spending time like no one.</p>
+                        </div>
+                        <div class="col-12" style="font-size: 14px;">
+                            <p style="padding: 0px; margin:0px"><i class="bi bi-arrow-right-circle-fill" style="color: #117b6f;"></i> Camp with your date!</p>
+                            <p style="padding: 0px; margin:0px"><i class="bi bi-arrow-right-circle-fill" style="color: #117b6f;"></i> Join hunting skills to improve your techniques.</p>
+                            <p style="padding: 0px; margin:0px"><i class="bi bi-arrow-right-circle-fill" style="color: #117b6f;"></i> Develop strong trust feelings</p>
+                            <p style="padding: 0px; margin:0px"><i class="bi bi-arrow-right-circle-fill" style="color: #117b6f;"></i> Explore beautiful places in nature</p>
+                        </div>
+                        <a href="https://www.hunting4connections.com/app/accounts/login/" type="button" class="btn btn-danger" style="margin-bottom: 10px; margin-top: 10px;">Meet your Match Now!</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-testimonial></app-testimonial>
+<section class="image-section-feature p-5">
+    <div class="container" style="min-height: 200px">
+        <div class="row mt-5">
+            <div class="col-12" style="text-align: center;">
+                <h2><b>Features</b></h2>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-md-3 col-sm-6" style="text-align: center;">
+                <img src="../../assets/connect_direction_path_way_icon.svg">
+                <h4><b>Connect with members</b></h4>
+                <p>Find members based on locations, interests and lifestyle.</p>
+            </div>
+            <div class="col-md-3 col-sm-6" style="text-align: center;">
+                <img src="../../assets/chat.svg">
+                <h4><b>Start Communicating</b></h4>
+                <p>Show interest in the members you like and let the journey begin!</p>
+            </div>
+            <div class="col-md-3 col-sm-6" style="text-align: center;">
+                <img src="../../assets/Сrossed_Vintage_Arrows.svg">
+                <h4><b>Find a community</b></h4>
+                <p>Find your date, friend, relationship, or activity partner</p>
+            </div>
+            <div class="col-md-3 col-sm-6" style="text-align: center;">
+                <img src="../../assets/Group35.svg">
+                <h4><b>Find your match, here</b></h4>
+                <p>Join our site and get amazing discounts, rewards and contests.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 col-sm-12" style="text-align: center;">
+                <a href="https://www.hunting4connections.com/app/accounts/login/" type="button" class="btn btn-outline-danger">Click Here to Join Today</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <h2><b>A Community of Friends & Singles!</b></h2>
+                <p style="font-size: 16px; color: gray;"><i>At last a group of people who understand your way of life. If you’re looking for a City Slicker, Tire Kicker, Country Folk or Redneck then you’ve landed at the right site. We’re here to help connect people who love the outdoors. There is nothing better than sharing your passion with a new friend or date.</i></p>
+            </div>
+        </div>
+        <div class="row p-5" style="font-size: 14px; color: gray;">
+            <div class="col-md-4 col-sm-6" style="text-align: center;">
+                <img src="../../assets/user1.png">
+                <p>“I love that Hunting 4 Connections asks me so much about the things I love to do!”<br><b>- Angie</b></p>
+            </div>
+            <div class="col-md-4 col-sm-6" style="text-align: center;">
+                <img src="../../assets/user2.png">
+                <p>“It’s awesome to finally see a dating site for outdoorsy people”<br><b>- Jay</b></p>
+            </div>
+            <div class="col-md-4 col-sm-6" style="text-align: center;">
+                <img src="../../assets/user3.png">
+                <p>“It’s great knowing that I can be surrounded by people with similar passions”<br><b>- Alex</b></p>
+            </div>
+            <div class="col-md-4 col-sm-6" style="text-align: center;">
+                <img src="../../assets/user4.png">
+                <p>“I seriously love this site. Finding other friends who love the outdoors as much as I do, just got easier. Finally a platform that gets me and my lifesytle!”<br><b>-Angie</b></p>
+            </div>
+            <div class="col-md-4 col-sm-6" style="text-align: center;">
+                <img src="../../assets/user5.png">
+                <p>“I have tried several dating sites and this is the first one I have actually “Connected” with people that share my same hobbies and passions!”<br><b>-Angie</b></p>
+            </div>
+            <div class="col-md-4 col-sm-6" style="text-align: center;">
+                <img src="../../assets/user6.png">
+                <p>“Connecting with like minded people on one platform is a game changer. It makes this process so much easier.  I have met some really nice people here that all understand my lifestyle.”<br><b>-Angie</b></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="image-section-promotions p-5">
+    <div class="container" style="min-height: 200px">
+        <div class="row mt-5">
+            <div class="col-12" style="text-align: center;">
+                <h2><b>Contests and Promotions!</b></h2>
+                <h4 style="color: gray;"><i>Just for Members!</i></h4>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-md-6 col-sm-12 mt-5">
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        <img src="../../assets/promo1.png" style="width: 100%;">
+                    </div>
+                    <div class="col-4 col-md-2" style="text-align: end;">
+                        <img src="../../assets/planeheart.png">
+                    </div>
+                    <div class="col-8 col-md-10">
+                        <h4 class="d-none d-sm-block"><b>Enter to win a 5 Day 4 Night Romantic Getaway!</b></h4>
+                        <p class="d-block d-sm-none"><b>Enter to win a 5 Day 4 Night Romantic Getaway!</b></p>
+                    </div>
+                    <div class="col-12">
+                        <p>You could win a:</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> Five Day, Four Night Romantic Getaway at Harpole’s</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> Heartland Lodge!</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> $100 gift card to Nucci’s Pasta House</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> $200 gift card to Hopewell Winery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-5">
+                <div class="row">
+                    <div class="col-12" style="text-align: center;">
+                        <img src="../../assets/promo2.png" style="width: 100%;">
+                    </div>
+                    <div class="col-4 col-md-2" style="text-align: end;">
+                        <img src="../../assets/planeheart.png">
+                    </div>
+                    <div class="col-8 col-md-10">
+                        <h4 class="d-none d-sm-block"><b>Enter to win a 4 Day 3 Night Whitetail Hunt of a Lifetime!Romantic Getaway!</b></h4>
+                        <p class="d-block d-sm-none"><b>Enter to win a 4 Day 3 Night Whitetail Hunt of a Lifetime!Romantic Getaway!</b></p>
+                    </div>
+                    <div class="col-12">
+                        <p>You could win a:</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> Five Day, Four Night Romantic Getaway at Harpole’s</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> Heartland Lodge!</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> $100 gift card to Nucci’s Pasta House</p>
+                        <p class="m-0 p-0"><i class="bi bi-arrow-right-circle-fill" style="color: red;"></i> $200 gift card to Hopewell Winery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-md-4 offset-md-4 col-sm-12" style="text-align: center;">
+                <a href="https://www.hunting4connections.com/app/accounts/login/" type="button" class="btn btn-danger">More Details? Click Here!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="image-section-patro p-5">
+    <div class="container-fluid" style="min-height: 200px">
+        <div class="row mt-5">
+            <div class="col-12" style="text-align: center; color: white;">
+                <h2><b>As Featured On</b></h2>
+                <p><i>Some text for our friends!</i></p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" style="min-height: 250px;">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/Realtree-logo.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/Outdoors_First_Banner__Whitetail_White_Transparency_LINEART_100.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/HuntingInsider.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/dn-logo-stacked-huge.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="min-height: 250px;">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/da-logo-2x.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/cropped-pban.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/Bowhunting-logo.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/bowhunting-logo-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" style="min-height: 250px;">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/Aces.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/2012_WON_Logo_Outlines.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-6 p-2" style="text-align: center;">
+                                <img src="../../assets/19adf1be-cda4-4875-afd9-b14fd42b194b_650x78.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

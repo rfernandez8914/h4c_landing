@@ -1,0 +1,51 @@
+.image-section{
+    background-image: url('./../../assets/fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-section-activities{
+    background-image: url('./../../assets/section_activities.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-section-feature{
+    background-image: url('./../../assets/feature.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-section-promotions{
+    background-image: url('./../../assets/promotions.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.image-section-patro{
+    background-image: url('./../../assets/section_patro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button{
+    border-radius: 10px;
+}
+.col img{
+    cursor: pointer;
+    transition: transform 1s;
+    object-fit: cover;
+}
+.col label{
+    overflow: hidden;
+    position: relative;
+}
+.imgbgchk:checked + label>.tick_container{
+    opacity: 1;
+}
+.imgbgchk:checked + label>img{
+    opacity: 0.3;
+}

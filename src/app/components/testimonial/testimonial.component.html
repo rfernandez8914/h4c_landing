@@ -1,0 +1,28 @@
+<section>
+    <div class="container-fluid" *ngIf="testimonials">
+        <div class="row" style="margin-top: 50px;margin-bottom: 50px;">
+            <div class="col-12 text-center">
+                <h2><b>Testimonials</b></h2>
+            </div>
+            <div class="col-12">
+                <ngb-carousel class="carousel-dark" [interval]="3000" [showNavigationIndicators]="false">
+                    <ng-template ngbSlide *ngFor="let testimonial of testimonials">
+                        <div class="picsum-img-wrapper" style="padding-left: 10%; padding-right: 10%; padding-bottom: 5%;">
+                            <div class="row">
+                                <div class="col-md-4 col-12 mt-1">
+                                    <img [src]="testimonial.photo" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-8 col-12 text-start mt-1">
+                                    <p class="d-none d-sm-block">{{ testimonial.testimonial }}</p>
+                                    <p class="d-block d-sm-none" style="font-size: 12px;">{{ testimonial.testimonial }}</p>
+                                    <p class="d-none d-sm-block" style="font-size: 12px;"><i><b>{{ testimonial.user }}</b></i></p>
+                                    <p class="d-block d-sm-none" style="font-size: 10px;"><i><b>{{ testimonial.user }}</b></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+    </div>
+</section>
