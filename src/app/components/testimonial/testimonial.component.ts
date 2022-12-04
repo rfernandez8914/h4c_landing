@@ -9,6 +9,7 @@ import { HomeService } from 'src/app/services/home.service';
 })
 export class TestimonialComponent implements OnInit {
   testimonials: Testimonial[] | undefined;
+  showTestimonials: Boolean = false
   constructor(
     private homeService: HomeService
   ) { }
@@ -16,6 +17,9 @@ export class TestimonialComponent implements OnInit {
     this.homeService.getTestimonials().subscribe({
       next: response => {
         this.testimonials = response
+        if(this.testimonials.length > 0){
+          this.showTestimonials = true
+        }
       },
       error: error => {
         console.log(error)

@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class TopUserComponent implements OnInit {
   users: User[] | undefined
-  url_page: string = environment.url_api
+  url_page: string = environment.url
   constructor(
     private homeService: HomeService
   ) { }
