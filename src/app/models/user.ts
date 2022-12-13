@@ -4,5 +4,5 @@ export interface User {
     photo: string;
     age: number;
     url: string;
-    activities: []
+    activities: String[]
 }
