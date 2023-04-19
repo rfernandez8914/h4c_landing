@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     seeking1: [false],
     seeking2: [false],
     min: [18],
-    max: [18]
+    max: [55]
   })
 
   ngOnInit(): void {
