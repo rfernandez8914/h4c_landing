@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  url_api = environment.url_api
   constructor(
     public fb: FormBuilder
   ) {}
@@ -27,11 +28,14 @@ export class HomeComponent implements OnInit {
     let seeking1 = ''
     let seeking2 = ''
     let parameters = ''
-    console.log(this.registerForm.value)
-    seeking1 = this.registerForm.controls['seeking1'].value == true ? 'M' : ''
-    seeking2 = this.registerForm.controls['seeking2'].value == true ? 'F' : ''
+    //seeking1 = this.registerForm.controls['seeking1'].value == true ? 'M' : ''
+    //seeking2 = this.registerForm.controls['seeking2'].value == true ? 'F' : ''
+    if(this.registerForm.controls['gender'].value == 'M')
+      seeking1 = 'F'
+    else
+      seeking1 = 'M'
     parameters = '?gender=' + this.registerForm.controls['gender'].value + '&seeking1=' + seeking1 + '&seeking2=' + seeking2 + '&min=' + this.registerForm.controls['min'].value + '&max=' + this.registerForm.controls['max'].value
-    window.location.href = 'https://www.hunting4connections.com/app/accounts/signup/' + parameters
+    window.location.href = this.url_api + '/accounts/signup/' + parameters
   }
 
 }
