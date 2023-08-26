@@ -1,7 +1,7 @@
-<section>
-    <div class="container">
-        <div class="row" style="text-align: center; margin-top: 50px;margin-bottom: 50px;">
-            <div class="col-12 mb-5">
+<section class="mt-5">
+    <div class="container mb-5">
+        <div class="row" style="text-align: center;">
+            <div class="col-12 mb-2">
                 <h2>Why try Hunting 4 Connections?</h2>
                 <p style="text-align: center;">
                     Why should you try Hunting 4 Connections? It only takes 4 minutes to sign up and is free. H4C is great for finding your match because it's created for outdoor enthusiasts. We match you based on your interest in outdoor activities. First fun dates are now easier to choose. No need to worry if your hobbies will scare others away.<br><br>
@@ -13,23 +13,24 @@
                     Join today - maybe you'll connect with your AWESOME NEW BEGINNING!
                 </p>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-6 mt-2" style="text-align: center;" *ngFor="let user of users">
-                    <div class="row">
-                        <div class="col-12">
-                            <img [src]="user.photo" class="img-fluid rounded" style="height: 200px;">
-                            <p><b>{{ user.user }}, {{ user.age }}</b></p> 
-                        </div>
-                        <div class="col-12" style="text-align: center">
-                            <ng-container *ngFor="let activity of user.activities; let i = index">
-                                <button *ngIf="i == 0" type="button" class="btn btn-danger mt-1 ms-1 p-1" style="font-size: 10px;" >{{ activity }}</button>
-                                <button *ngIf="i == 1" type="button" class="btn mt-1 ms-1 p-1" style="font-size: 10px; color: white; background-color: #7D956A" >{{ activity }}</button>
-                                <button *ngIf="i == 2" type="button" class="btn btn-warning mt-1 ms-1 p-1" style="font-size: 10px;" >{{ activity }}</button>
-                            </ng-container>
-                        </div>
-                        <div class="col-12 mt-2">
-                            <a [href]="url_page + user.url" type="button" class="btn btn-outline-danger" style="margin-top: 10px;">Say Hi!</a>
-                        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-6 mt-2" style="text-align: center;" *ngFor="let user of users">
+                <div class="row">
+                    <div class="col-12">
+                        <img [src]="user.photo" class="img-fluid rounded" style="height: 200px;">
+                        <p class="d-none d-sm-block mb-1"><b>{{ user.user }}, {{ user.age }}</b></p> 
+                        <p class="d-block d-sm-none mb-1" style="font-size: 14px;"><b>{{ user.user }}, {{ user.age }}</b></p> 
+                    </div>
+                    <div class="col-12" style="text-align: center">
+                        <ng-container *ngFor="let activity of user.activities; let i = index">
+                            <button *ngIf="i == 0" type="button" class="btn btn-danger mt-1 ms-1 p-1" style="font-size: 10px;" >{{ activity }}</button>
+                            <button *ngIf="i == 1" type="button" class="btn mt-1 ms-1 p-1" style="font-size: 10px; color: white; background-color: #7D956A" >{{ activity }}</button>
+                            <button *ngIf="i == 2" type="button" class="btn btn-warning mt-1 ms-1 p-1" style="font-size: 10px;" >{{ activity }}</button>
+                        </ng-container>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <a [href]="url_page + user.url" type="button" class="btn btn-outline-danger" style="margin-top: 10px;">Say Hi!</a>
                     </div>
                 </div>
             </div>
