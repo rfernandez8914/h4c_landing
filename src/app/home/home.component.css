@@ -1,26 +1,26 @@
 .image-section{
-    background-image: url('./../../assets/background.jpeg');
+    background-image: url('https://h4cstatic1.s3.us-east-2.amazonaws.com/images/background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .image-section-activities{
-    background-image: url('./../../assets/h4c_camping.jpg');
+    background-image: url('https://www.hunting4connections.com/page/wp-content/uploads/2023/09/h4c_camping.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .image-section-feature{
-    background-image: url('./../../assets/feature.png');
+    background-image: url('https://www.hunting4connections.com/page/wp-content/uploads/2023/09/feature.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .image-section-promotions{
-    background-image: url('./../../assets/promotions.png');
+    background-image: url('https://www.hunting4connections.com/page/wp-content/uploads/2023/09/promotions.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
