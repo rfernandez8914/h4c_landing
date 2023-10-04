@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Testimonial } from '../models/testimonial';
 import { User } from '../models/user';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,5 +20,9 @@ export class HomeService {
 
   getTopUsers() {
     return this.http.get<User[]>(this.api_url + '/users/api/topusers/home/')
+  }
+
+  getUserPackage(): Observable<any>{
+    return this.http.get(this.api_url + '/users/api/userpackage')
   }
 }

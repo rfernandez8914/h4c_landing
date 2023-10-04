@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { TopUserComponent } from './components/top-user/top-user.component';
+import { MembershipComponent } from './components/membership/membership.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TopUserComponent } from './components/top-user/top-user.component';
     HeaderComponent,
     FooterComponent,
     TestimonialComponent,
-    TopUserComponent
+    TopUserComponent,
+    MembershipComponent
   ],
   imports: [
     BrowserModule,

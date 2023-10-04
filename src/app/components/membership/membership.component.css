@@ -1,0 +1,109 @@
+.container-token{
+    background-image: url(https://h4cdemoresources.s3.amazonaws.com/localdocker/images/bg-banner-token1.png);
+    border: 2px solid #e2d6a6;
+    border-radius: 0.3rem;
+    /*padding: 2rem 1.5rem;*/
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.discount-label {
+    padding:3px; 
+    position:absolute;
+    margin-left:70%;
+    width:65px;
+    border-radius:0 4px 4px 0;
+   
+}
+   
+.discount-label:after { 
+    right: 100%; 
+    border: solid transparent; content: " "; 
+    height: 0; 
+    width: 0; 
+    position: absolute;
+    border-color: rgba(136, 183, 213, 0);
+    
+    border-width: 20px; 
+    top: 50%; 
+    margin-top: -20px;
+} 
+   
+.discount-label:before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    top: 42%;
+    right: 100%;
+    width: 7px;
+    height: 7px;
+    opacity: .95;
+    background: #ffffff;
+    border-radius: 7px;
+    -webkit-box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: inset .5px 0 rgba(0, 0, 0, 0.6);
+   
+}
+.discount-label span {
+    color:#ffffff;
+    font-size:15px;
+    text-align:center;
+    font-family:"Raleway",Helvetica;
+}
+.green{ 
+    background-color:#feaa00; 
+    font-size: 23px;
+    display: block;
+}
+
+.green:after{ 
+    border-right-color: #feaa00;
+}
+
+.purchase-month {
+    font-size: 20pt !important;
+    color: #93aa51;
+    text-transform: lowercase !important;
+}
+
+p.price {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #003307;
+}
+
+.purchase-price, .token {
+    font-size: 16pt !important;
+}
+
+p.bonus {
+    text-transform: capitalize;
+}
+
+p.bonus {
+    font-weight: 600;
+    color: #0751A2;
+    margin: 0.5rem 0;
+}
+
+.line {
+    margin: 2rem auto;
+    width: 50%;
+    border-top: 0.2rem dashed #a0b466;
+}
+
+.btn-select-plan {
+    margin: 2rem 0;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #F5A900;
+    border-color: #d4b41c;
+    border-radius: 4rem;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
