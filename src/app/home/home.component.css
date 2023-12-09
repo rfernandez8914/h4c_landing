@@ -1,5 +1,5 @@
 .image-section{
-    background-image: url('https://h4cstatic1.s3.us-east-2.amazonaws.com/images/background.jpeg');
+    background-image: url('./../../assets/background.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
